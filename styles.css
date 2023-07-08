@@ -5,6 +5,48 @@ body {
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
+    background-color: #c0c0c0;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 200px;
+}
+
+.dropdown-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-right: 0px;
+}
+
+#add-tile {
+    background: none;
+    font-size: 15px;
+    font-style: bold;
+    padding: auto;
+    margin: 15px;
+}
+
+#reset {
+    background: none;
+    font-size: 15px;
+    font-style: bold;
+    padding: auto;
+    margin: 15px;
+
+}
+
+#reset:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#add-tile:hover {
+    background-color: red;
+    cursor: pointer;
 }
 
 #board {
@@ -16,6 +58,21 @@ body {
     width: 80vw;
     height: 66vh;
     background-color: #333;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bank {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    height: 23vh;
+    background-color: #333;
+    margin-bottom: 10px;
 }
 
 .tier {
@@ -30,7 +87,8 @@ body {
     justify-content: center;
     align-items: center;
     height:100%;
-    width: 50px;
+    width: 85px;
+    font-style: bold;
     background-color: violet;
 }
 
@@ -38,8 +96,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%;
-    width: 40px;
+    max-height: 35px;
+    max-width: 35px;
     background-color: white;
+}
 
+.tile:hover {
+    cursor: pointer;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-right: 0px;
+    height: 30px;
+}
+
+img {
+    max-height: 35px;
+    max-width: 35px;
 }

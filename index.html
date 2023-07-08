@@ -7,11 +7,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1>Tier List</h1>
+        <span class="main-header">
+            <div class="dropdown-container">
+                <select class="dropdown">
+                    <option value="">What do you want to sort?</option>
+                    <option value="League">League of Legends</option>
+                    <option value="movies">Movies</option>
+                </select>
+            </div>
+            <button id="add-tile">Add Tile➕</button>
+            <h1>Tier List</h1>
+            <button id="reset">&#128128;Reset</button>
+        </span>
         <div id="board">
             <div class="tier">
                 <div class="tier-label">S</div>
-                <div class="tile" id="first" draggable="true">hello</div>
             </div>
             <div class="tier">
                 <div class="tier-label">A</div>
@@ -29,7 +39,24 @@
                 <div class="tier-label">F</div>
             </div>
         </div>
-    </body>
+        <h2>Bank</h2>
+        <div id="bank">
+            <div class="tile text" id="first" draggable="true">yoyo
+            </div>
+            <div class="tile movie" id="second" draggable="true">
+                
+            </div>
+            <div class="tile movie" id="third" draggable="true">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/p_holes_19755_8f3e1618.jpeg">
+            </div>
+            <div class="tile champ" id="fourth" draggable="true">
+                <img src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/1.png">
+            </div>
+            <div class="tile champ" id="fifth" draggable="true">
+                <img src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/1.png">
+            </div>
+        </div>
+        </body>
     <script src="tiles.jsx"></script>
     <script src="tiers.jsx"></script>
     <script src="bank.jsx"></script>
