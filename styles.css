@@ -101,6 +101,15 @@ h2 {
     background-color: white;
 }
 
+.fruit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 90px;
+    max-width: 90px;
+    background-color: white;
+}
+
 .tile:hover {
     cursor: pointer;
 }
@@ -117,3 +126,7 @@ img {
     max-height: 35px;
     max-width: 35px;
 }
+
+/* .hidden {
+    display: none;
+} */

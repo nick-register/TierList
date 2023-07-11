@@ -1,7 +1,6 @@
 const tiles = document.querySelectorAll('.tile');
 const addTile = document.querySelector('#add-tile');
 
-
 /* add cards */
 
 const addTileToBank = (event) => {
@@ -76,4 +75,3 @@ tiles.forEach((tile) => {
     tile.ondragstart = onDragStart;
     tile.ondragend = onDragEnd;
 })
-

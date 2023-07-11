@@ -8,13 +8,14 @@
     </head>
     <body>
         <span class="main-header">
-            <div class="dropdown-container">
-                <select class="dropdown">
-                    <option value="">What do you want to sort?</option>
-                    <option value="League">League of Legends</option>
-                    <option value="movies">Movies</option>
+            <form class="dropdown-container">
+                <select class="dropdown" id="dropdown" name="selection">
+                    <option value="0">What do you want to sort?</option>
+                    <option value="1">League of Legends</option>
+                    <option value="2">Fruit</option>
+                    <option value="3">Text</option>
                 </select>
-            </div>
+            </form>
             <button id="add-tile">Add Tile➕</button>
             <h1>Tier List</h1>
             <button id="reset">&#128128;Reset</button>
@@ -41,24 +42,15 @@
         </div>
         <h2>Bank</h2>
         <div id="bank">
-            <div class="tile text" id="first" draggable="true">yoyo
-            </div>
-            <div class="tile movie" id="second" draggable="true">
-                
-            </div>
-            <div class="tile movie" id="third" draggable="true">
-                <img src="https://lumiere-a.akamaihd.net/v1/images/p_holes_19755_8f3e1618.jpeg">
-            </div>
-            <div class="tile champ" id="fourth" draggable="true">
-                <img src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/1.png">
-            </div>
-            <div class="tile champ" id="fifth" draggable="true">
-                <img src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/1.png">
-            </div>
+            <div class="tile hidden text" id="first" draggable="true">yoyo</div>
+            <div class="tile hidden text" id="second" draggable="true">yaya</div>
+            <img class="tile hidden fruit" id="banana" draggable="true" src="https://images.everydayhealth.com/images/diet-nutrition/how-many-calories-are-in-a-banana-1440x810.jpg?sfvrsn=be4504bc_0">
+            <img class="tile hidden fruit" id="strawberry" draggable="true" src="https://images.unsplash.com/photo-1518635017498-87f514b751ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3RyYXdiZXJyeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60">
+            <img  class="tile hidden champ" id="annie" draggable="true" src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/1.png">
+            <img  class="tile hidden champ" id="kayle" draggable="true" src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/10.png">
         </div>
         </body>
     <script src="tiles.jsx"></script>
     <script src="tiers.jsx"></script>
     <script src="bank.jsx"></script>
-
 </html>
