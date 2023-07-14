@@ -122,11 +122,16 @@ h2 {
     height: 30px;
 }
 
-img {
+.champ {
     max-height: 35px;
     max-width: 35px;
 }
 
-/* .hidden {
-    display: none;
-} */
+.text {
+    max-height: 35px;
+    max-width: 35px;
+}
+
+/*.tile-container {
+    visibility: hidden;
+}

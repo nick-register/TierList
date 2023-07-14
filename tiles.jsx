@@ -1,6 +1,7 @@
 const tiles = document.querySelectorAll('.tile');
 const addTile = document.querySelector('#add-tile');
 
+
 /* add cards */
 
 const addTileToBank = (event) => {
@@ -75,3 +76,35 @@ tiles.forEach((tile) => {
     tile.ondragstart = onDragStart;
     tile.ondragend = onDragEnd;
 })
+
+function showClass() {
+    const e = document.getElementById("dropdown");
+    const val = e.value;
+    console.log(val);
+    if (val == '0') {
+        console.log("val is equal to 0");
+        $("img.champ").show();
+        $("img.fruit").show();
+        $(".text").show();
+    } else if (val == '1') {
+        console.log("val is equal to 1");
+        $("img.champ").show();
+        $("img.fruit").hide();
+        $(".text").hide();
+    } else if (val == '2') {
+        console.log("val is equal to 2");
+        $("img.champ").hide();
+        $("img.fruit").show();
+        $(".text").hide();
+    } else if (val == '3') {
+        console.log("val is equal to 3");
+        $("img.champ").hide();
+        $("img.fruit").hide();
+        $(".text").show();
+    } else {
+        $("img.champ").show();
+        $("img.fruit").show();
+        $(".text").show();
+    }
+} 
+
